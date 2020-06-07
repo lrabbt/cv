@@ -1,0 +1,157 @@
+%----------------------------------------------------------------------------------------
+%  PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+% Portuguese-specific commands
+%--------------------------------------
+\usepackage[brazilian]{babel}
+%--------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%  TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+  \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Breno}}}}} % First name
+
+  \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Brandao}}}}} % Last name
+
+  \vspace{6pt}
+
+  {\huge Desenvolvedor Full Stack} % Career or current job title
+
+  \vspace{2pt}
+
+  {\small 25/08/1997}
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+  % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+  \icon{MapMarker}{12}{Freguesia, RJ}\\
+        \icon{Phone}{12}{+55 (21) 98100-1957}\\
+  \icon{At}{12}{\href{mailto:lrabbt@gmail.com}{lrabbt@gmail.com}}\\  
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+  % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+  \icon{Linkedin}{12}{\href{https://www.linkedin.com/in/breno-brandão-bb1597168/}{Breno Brandão}}\\
+  \icon{Github}{12}{\href{https://github.com/lrabbt}{github.com/lrabbt}}\\
+  \icon{Gitlab}{12}{\href{https://gitlab.com/lrabbt}{gitlab.com/lrabbt}}\\
+\end{minipage}
+
+\vspace{0.3cm}
+
+%----------------------------------------------------------------------------------------
+%  INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Quem sou eu?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+        Meu nome é Breno, sou desenvolvedor full stack que possui muito gosto por resolução de problemas. Gosto de trabalhar em equipe, para que possa discutir e implementar sempre a melhor solução para o cliente. Prezo pela qualidade do meu código, uso Linux como SO e estou procurando sempre aprender e aplicar algo novo.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+  \begin{barchart}{5.5}
+    \baritem{Java}{90}
+    \baritem{Python}{80}
+    \baritem{Javascript}{50}
+    \baritem{Spring Boot}{70}
+    \baritem{Flask}{60}
+    \baritem{Angular 2+}{70}
+  \end{barchart}
+\end{minipage}
+
+\begin{center}
+  \bubbles{5/Docker, 6/git, 3/Office, 3.5/Jira, 4/Jenkins, 5/GitLab-CI}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%  EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experiencia}
+
+\begin{entrylist}
+  \entry
+    {1/2015 -- 2020}
+    {Desenvolvedor full stack}
+    {Celeritech Brasil}
+    {Configurei a infraestrutura do servidor da empresa.\\Fui responsável pela arquitetura de quatro projetos, todos baseados em micro serviços e comunicação seguindo os padrões REST, e configurei seus ambientes de desenvolvimento, homologação e produção, aplicando conceitos de DevOps com Docker como base.\\Implantei GitLab integrado com Jira e Confluence para gerenciamento da equipe.\\CI/CD foram implementados com GitLab-CI por motivos de melhor integração.\\Fui líder técnico de uma equipe de scrum com dez integrantes.\\Em 2019 fui promovido para Analista Desenvolvedor Sênior, sou responsável pela arquitetura de projetos novos, levantamento de requisitos e desenvolvimento da solução em conjunto à equipe.\\ \texttt{Spring Boot}\slashsep\texttt{Flask}\slashsep\texttt{Bottle}\slashsep\texttt{Angular 6}\slashsep\texttt{Linux}\slashsep\texttt{MySQL}\slashsep\texttt{OracleDB}}
+  \entry
+    {2/2016 -- 1/2018}
+    {Estagiário}
+    {SESA}
+    {Trabalhei com ferramentas de ETL, usando Groovy para lógica e Hadoop para visualização e dados. Usei C para tratamento e gerenciamento de arquivos e desenvolvi aplicações para Android nativo em Java manipulando recursos do hardware.\\ \texttt{Talend}\slashsep\texttt{Groovy}\slashsep\texttt{C}\slashsep\texttt{Java}\slashsep\texttt{Android Studio}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%  EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Educacao}
+
+\begin{entrylist}
+  \entry
+    {2015 -- Atualmente}
+    {Bacharelado em Ciência da Computação}
+    {UERJ}
+    {Cursando atualmente.}
+  \entry
+    {2012 -- 2014}
+    {Ensino Médio Técnico}
+    {CEFET-RJ}
+    {Foi meu primeiro contato com programação, começando com Pascal (breve) e focado majoritariamente em C.}
+  \entry
+    {2/2011 -- 8/2017}
+    {Curso de Inglês}
+    {Cultura Inglesa}
+    {}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%  ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+  \cvsect{Linguagens}
+
+  \textbf{Português} - nativo\\
+  \textbf{Inglês} - fluente\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+  \cvsect{Hobbies}
+
+  Gosto de tocar violão, ir à praia com meu amigos, fazer churrasco, programar e jogar video-game.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+  \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+  \cvsect{Atividade extras}
+
+  Medalha de Prata na OBMEP - 2014\\
+  Medalha de Bronze em Olimpíada de algoritmos – OAH 2014\\
+  Hack "A" Prev, Shawee - 2020
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
